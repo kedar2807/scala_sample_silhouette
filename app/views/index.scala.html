@@ -1,0 +1,5 @@
+@(user: models.User)
+
+@main("kedar",Some(user)) {
+    index page : @user.firstName.getOrElse("None")
+}
